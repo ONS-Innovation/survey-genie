@@ -169,3 +169,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+survey_genie/templates/components
+survey_genie/templates/layout
+.DS_Store

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "survey-genie"
+version = "0.1.0"
+description = "Create a survey from config"
+authors = ["Steve Gibbard <steve.gibbard@ons.gov.uk>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "^3.1.0"
+flask-misaka = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
