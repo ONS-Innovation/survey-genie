@@ -3,12 +3,8 @@ import os
 from flask import (
     Flask,
     json,
-    jsonify,
-    redirect,
     render_template,
-    request,
     session,
-    url_for,
 )
 
 from flask_misaka import Misaka
@@ -34,6 +30,7 @@ app.config["FREEZER_DEFAULT_MIMETYPE"] = "text/html"
 app.config["FREEZER_DESTINATION"] = "../build"
 app.cache = {}
 
+
 @app.route("/")
 def index():
     # When the user navigates to the home page, reset the session data
@@ -48,6 +45,7 @@ def index():
     session.modified = True
 
     return render_template("index.html")
+
 
 @app.errorhandler(404)
 @app.route("/page-not-found")
