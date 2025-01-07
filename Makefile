@@ -49,7 +49,7 @@ colima-stop: ## Stop Colima
 
 .PHONY: docker-build
 docker-build: ## Build the Docker image
-	DOCKER_HOST="unix://${HOME}/.colima/default/docker.sock" docker build -t ai-assist-builder .
+	DOCKER_HOST="unix://${HOME}/.colima/default/docker.sock" docker build -t survey-genie .
 
 .PHONY: docker-run
 docker-run: ## Run the Docker container
@@ -57,7 +57,7 @@ docker-run: ## Run the Docker container
 		-p 8000:8000 \
 		-e FLASK_SECRET_KEY=FLASK_SECRET_KEY \
 		-e FLASK_ENV=production \
-		ai-assist-builder
+		survey-genie
 
 .PHONY: docker-clean
 docker-clean: ## Clean Docker resources
