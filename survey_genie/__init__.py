@@ -1,12 +1,6 @@
 import os
 
-from flask import (
-    Flask,
-    json,
-    render_template,
-    session,
-)
-
+from flask import Flask, json, render_template, session
 from flask_misaka import Misaka
 
 DEBUG = True
