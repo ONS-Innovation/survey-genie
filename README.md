@@ -4,7 +4,7 @@ Flask survey from config PoC
 
 ## Objective
 
-Demonstrate to stakeholders how AI can enhance survey questions to improve response rates.
+Demonstrate a simple survey from config
 
 ## Setup Instructions
 
