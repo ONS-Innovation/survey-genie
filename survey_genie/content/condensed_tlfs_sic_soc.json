@@ -84,7 +84,7 @@
         "used_for_classifications": []
       }    
     ],
-    "ai_assist": {
+    "survey_assist": {
       "enabled": true,
       "question_assist_label": "<br><strong>(Asked by Survey Assist)</strong></br>",
       "consent": {
